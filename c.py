@@ -1,10 +1,14 @@
+word = input('enter a word')
+print("original String:", word)
 
-print("Enter a character")
-c=input()
-if(c=='a' or c=='e' or c=='i' or c=='o' or c=='u' or c=='A' or c=='E' or c=='I' or c=='O' or c=='U'):
-    print("Vowel")
+size = len(word)
+print("Printing only even index chars")
+for i in range(0, size -1, 2):
+    print("index[", i, "]", word[i])
 
-elif((c>='A' and c<='Z')or(c>='a' and c<='z')):
-    print('Consonant')
-else:
-    print("Invalid output")
+
+#Exercise 3: Print characters from a string that are present at an even index number
+
+#Write a program to accept a string from the user and display characters that are present at an even index number.
+
+#For example, str = "pynative" so you should display ‘p’, ‘n’, ‘t’, ‘v’.
